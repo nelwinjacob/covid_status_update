@@ -99,7 +99,7 @@ df = df[~(df.Country.isin(np.append(df.Continent.unique(), np.array(["Oceania","
 # In[136]:
 
 
-df.info()
+#df.info()
 
 
 # In[138]:
@@ -138,4 +138,10 @@ world_new_cases = df['NewCases'].sum()
 india_total_cases = int(df.loc[df.Country == "India"]['TotalCases'])
 
 india_new_cases = int(df.loc[df.Country == "India"]['NewCases'])
+
+#output
+print(world_cases)
+print(world_new_cases)
+print(india_total_cases)
+print(india_new_cases)
 
